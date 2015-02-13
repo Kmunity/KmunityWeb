@@ -1,0 +1,5 @@
+Field	Type	Null	Key	Default	Extra
+name	char(20)	NO	PRI		
+sub	int(11)	YES		NULL	
+grade	char(4)	YES		NULL	
+point	float	YES		NULL	
