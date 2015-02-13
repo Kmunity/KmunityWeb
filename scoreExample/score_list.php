@@ -71,14 +71,14 @@
 		$sql.="order by sum";
 
 	$result = mysql_query($sql);
-
+	$count=1;
 	while($row=mysql_fetch_array($result)){
 		$avg=round($row[avg],1);
 
 		$num=$row[num];
 
 		echo "<tr align='center'>
-			<td>$num</td>
+			<td>$count</td>
 			<td>$row[name]</td>
 			<td>$row[sub1]</td>
 			<td>$row[sub2]</td>
@@ -89,6 +89,8 @@
 			<td>$avg</td>
 			<td><a href='score_delete.php?num=$num'>[삭제]</a></td>
 			</tr>";
+
+			$count++;
 	}
 
 	mysql_close();
