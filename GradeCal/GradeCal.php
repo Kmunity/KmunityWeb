@@ -12,8 +12,7 @@
 						"C+" => 2.5,
 						"C" => 2.0,
 						"D+" => 1.5,
-						"D" => 1.0,
-						"P" => 0.0];
+						"D" => 1.0];
 
 		$name = $_POST[name];
 		$sub = $_POST[sub];
@@ -60,7 +59,6 @@
 			<option value="C">C</option>
 			<option value="D+">D+</option>
 			<option value="D">D</option>
-			<option value="P">P</option>
 			</select></td>
 	<td><input type="submit" value="추가하기"/></td>		
 </tr></table>	
@@ -110,3 +108,4 @@
 	mysql_close();
 ?>
 </table>
+<p>* 패스/노패스 과목은 평점에 포합되지 않음.</p>
